@@ -22,103 +22,144 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-1 sbody">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-cog"></i></a>
-                        <p class="lnav-text setting">Settings</p>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-plus"></i></a>
-                        <p class="lnav-text">Media</p>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-music"></i></a>
-                        <p class="lnav-text">Audio</p>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-closed-captioning"></i></a>
-                        <p class="lnav-text">Subtitles</p>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-text-height"></i></a>
-                        <p class="lnav-text">Text</p>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-file"></i></a>
-                        <p class="lnav-text">Elements</p>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-windows"></i></a>
-                        <p class="lnav-text">Templates</p>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link question" href="#"><i class="far fa-question-circle"></i></a>
-                    </li>
-                </ul>
+                <div class="scrollable-container">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-cog"></i></a>
+                            <p class="lnav-text setting">Settings</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-plus"></i></a>
+                            <p class="lnav-text">Media</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-music"></i></a>
+                            <p class="lnav-text">Audio</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-closed-captioning"></i></a>
+                            <p class="lnav-text">Subtitles</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-text-height"></i></a>
+                            <p class="lnav-text">Text</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-file"></i></a>
+                            <p class="lnav-text">Elements</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-windows"></i></a>
+                            <p class="lnav-text">Templates</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-video"></i></a>
+                            <p class="lnav-text">Record</p>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nav-link question" href="#"><i class="far fa-question-circle"></i></a>
             </div>
             <div class="col-11 mbody">
                 <div class="row bodysection">
                     <div class="col-4 leftsec">
                         <h4 class="project">Project Settings</h4>
-                        <div class="size">
-                            <p class="name-text">Size</p>
-                            <form action="#">
-                                <div class="input-group mb-3">
-                                    <select class="form-select" id="inputGroupSelect02">
-                                        <option selected>Original <span class="num">(16:9)</span></option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="background">
-                            <p class="name-text">Background</p>
-                            <form action="#">
-                                <div class="color">
-                                    <input type="radio" name="color" checked>
-                                    <p class="col">Color</p>
-                                    <p class="hex">#000000</p>
-                                    <i class="fas fa-fill-drip"></i>
-                                </div>
-                                <div class="upload">
-                                    <input type="radio" name="radio">
-                                    <p class="col">Image</p>
-                                    <p class="upd">Upload</p>
-                                    <i class="fas fa-cloud-upload-alt"></i>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="audio">
-                            <p class="name-text">Audio</p>
-                            <div class="row star">
-                                <div class="col-2 fstar">
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <div class="col-8 caudio">
-                                    <p class="caud">Clean Audio</p>
-                                    <p class="removebg">Remove Background Noise</p>
-                                </div>
-                                <div class="col-2 thunder">
-                                    <i class="fas fa-bolt"></i>
+                        <div class="scrollablediv">
+                            <div class="size">
+                                <p class="name-text">Size</p>
+                                <form action="#">
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="inputGroupSelect02">
+                                            <option selected>Original <span class="num">(16:9)</span></option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="background">
+                                <p class="name-text">Background</p>
+                                <form action="#">
+                                    <div class="color">
+                                        <input type="radio" name="color" checked>
+                                        <p class="col">Color</p>
+                                        <p class="hex">#000000</p>
+                                        <i class="fas fa-fill-drip"></i>
+                                    </div>
+                                    <div class="upload">
+                                        <input type="radio" name="radio">
+                                        <p class="col">Image</p>
+                                        <p class="upd">Upload</p>
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="audio">
+                                <p class="name-text">Audio</p>
+                                <div class="row star">
+                                    <div class="col-2 fstar">
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="col-8 caudio">
+                                        <p class="caud">Clean Audio</p>
+                                        <p class="removebg">Remove Background Noise</p>
+                                    </div>
+                                    <div class="col-2 thunder">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="duration">
-                            <p class="name-text">Duration</p>
-                            <div class="row dur">
-                                <h4>Duration</h4>
+                            <div class="duration">
+                                <p class="name-text">Duration</p>
+                                <form action="#">
+                                    <div class="color">
+                                        <input type="radio" name="color" checked>
+                                        <p class="col">Automatic</p>
+                                    </div>
+                                    <div class="upload">
+                                        <input type="radio" name="radio">
+                                        <p class="col">Fixed</p>
+                                        <p class="upd">01:00.0</p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="frames">
+                                <p class="name-text">Frames Per Second</p>
+                                <form action="#">
+                                    <div class="input-group mb-3">
+                                        <select class="form-select" id="inputGroupSelect02">
+                                            <option value="60">60</option>
+                                            <option value="50">50</option>
+                                            <option selected>30</option>
+                                            <option value="25">25</option>
+                                            <option value="24">24</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="version">
+                                <p class="name-text">Version History</p>
+                                <div class="row star">
+                                    <div class="col-2 fstar">
+                                        <i class="fas fa-puzzle-piece"></i>
+                                    </div>
+                                    <div class="col-8 caudio">
+                                        <p class="caud">Restore to a previous version</p>
+                                        <p class="removebg">Creates a new project</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
