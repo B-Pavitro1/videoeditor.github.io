@@ -380,6 +380,24 @@ i.fas.fa-puzzle-piece {
   padding-right: 22px;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(168, 168, 168);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #636363;
+}
+
 .scrollable-container {
   max-height: 570px;
   overflow-y: auto;
