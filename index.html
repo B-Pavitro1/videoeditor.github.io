@@ -201,9 +201,9 @@
                     </div>
                     <div class="col-4 f2">
                         <i class="fas fa-backward"></i>
-                        <i class="fas fa-play"></i>
-                        <p class="time-sec">00:01:6</p>
+                        <i class="fas fa-play" id="playButton"></i>
                         <i class="fas fa-forward"></i>
+                        <p class="timer" id="timer">00:00.0 / 00:45.3</p>
                     </div>
                     <div class="col-4 f3">
                         <i class="fas fa-volume-up"></i>
@@ -221,6 +221,10 @@
                     </div>
                 </div>
                 <div class="row footersection2">
+                    <div class="dashed-vertical-line" id="draggableLine">
+                        <i class="fas fa-caret-down"></i>
+                        <div class="dvl"></div>
+                    </div>
                     <div class="scale">
                         <div class="scale-line big"></div>
                         <div class="scale-label">0</div>
@@ -326,16 +330,6 @@
                         <div class="scale-line"></div>
                         <div class="scale-line"></div>
                         <div class="scale-line"></div>
-                        <div class="scale-line"></div>
-                        <div class="scale-line"></div>
-                        <div class="scale-line"></div>
-                        <div class="scale-line"></div>
-                        <div class="scale-line"></div>
-                        <div class="scale-line"></div>
-                        <div class="scale-line big"></div>
-                        <div class="scale-label">50</div>
-                        <div class="scale-line"></div>
-                        <div class="scale-line"></div>
                     </div>
                 </div>
                 <div class="row footersection3">
@@ -362,11 +356,15 @@
                     <img src="https://media.istockphoto.com/id/1173935107/photo/long-wave-on-the-coast-dawn-on-the-sea-tunisia.webp?b=1&s=170667a&w=0&k=20&c=Vhi_ZXYXI5VZFX96XeesDYji7c4HAlYoS_rt_j8ZEY4="
                         class="small-img" alt="">
                     <img src="https://media.istockphoto.com/id/1173935107/photo/long-wave-on-the-coast-dawn-on-the-sea-tunisia.webp?b=1&s=170667a&w=0&k=20&c=Vhi_ZXYXI5VZFX96XeesDYji7c4HAlYoS_rt_j8ZEY4="
+                        class="small-img" alt="">
+                    <img src="https://media.istockphoto.com/id/1173935107/photo/long-wave-on-the-coast-dawn-on-the-sea-tunisia.webp?b=1&s=170667a&w=0&k=20&c=Vhi_ZXYXI5VZFX96XeesDYji7c4HAlYoS_rt_j8ZEY4="
                         class="small-img last" alt="">
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
