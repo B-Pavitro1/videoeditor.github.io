@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Variables to store initial drag state
   let isDragging = false;
   let initialX = 0;
   let initialTime = 0;
@@ -47,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initialX = event.clientX;
     initialTime = currentTime;
 
-    // Add event listeners to track mouse movement and release
     document.addEventListener("mousemove", mouseMoveHandler);
     document.addEventListener("mouseup", mouseUpHandler);
   });
@@ -57,20 +55,18 @@ document.addEventListener("DOMContentLoaded", () => {
       const currentX = event.clientX;
       const deltaX = currentX - initialX;
 
-      // Calculate time change based on drag distance (two units of drag = one second change)
-      const timeChange = deltaX / 2;
+      const sensitivity = 0.03; 
 
-      // Update currentTime based on initial time and calculated timeChange
+      const timeChange = deltaX * sensitivity;
+
       currentTime = Math.max(0, initialTime + timeChange);
       currentTime = Math.min(currentTime, maxTime);
 
-      // Update timer display and draggable line position
       updateTimerAndLine();
     }
   };
 
   const mouseUpHandler = () => {
-    // Reset dragging state and remove event listeners
     isDragging = false;
     document.removeEventListener("mousemove", mouseMoveHandler);
     document.removeEventListener("mouseup", mouseUpHandler);
